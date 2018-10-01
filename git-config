@@ -1,0 +1,31 @@
+[user]
+	email = TODO
+	name = TODO
+[core]
+  editor = vim
+  autocrlf = input
+[color]
+  ui = true
+[pull]
+  rebase = preserve
+[status]
+  submoduleSummary = true
+  showUntrackedFiles = all
+[diff]
+  submodule = log
+[fetch]
+  prune = true
+[credential]
+  helper = cache --timeout=3600
+[alias]
+	ll = log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]\" --decorate --numstat
+	last = log -1 HEAD
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	rb = rebase
+	mg = merge
+	ls = log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]\" --decorate
+	plog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset' --abbrev-commit
+
